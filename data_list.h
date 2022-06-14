@@ -21,7 +21,7 @@
 
 /**
  * @class list_element
- * @brief Element of a chained list that contains a double value and is linked with previous and next values of the list :
+ * @brief  Element of a chained list that contains a double value and is linked with previous and next values of the list :
  * - if previous element is null : the element is the list head
  * - if next element is null : the element is the list tail
  * 
