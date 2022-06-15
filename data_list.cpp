@@ -185,7 +185,7 @@ data_list data_list::sort_table(bool ascending) {
 data_list data_list::average() {
     data_list result;
     data_list sum_table = table_sum();
-    result._values.push_back(sum_table._values.get_value(0) / _values.size());
+    result._values.push_back(sum_table._values[0].get_value() / _values.size());
     return result;
 }
 

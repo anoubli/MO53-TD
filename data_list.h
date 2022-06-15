@@ -198,10 +198,12 @@ public:
     void sort_list(bool ascending);
 
     struct data_list_iterator {
+
         private:
             list_element *element;
 
         public:
+            list_element& operator*() const{return *element;};
             data_list_iterator(list_element *element);
             list_element* getElement(){return this->element;};
             data_list_iterator& operator++();
@@ -211,6 +213,16 @@ public:
 
     data_list_iterator begin();
     data_list_iterator end();
+
+    list_element &operator[](int i){
+        data_list_iterator it = begin();
+        int count = 0;
+        while(count < i && it != end()){
+            it++;
+            count++;
+        }
+        return *it;
+    }
 };
 
 /**
