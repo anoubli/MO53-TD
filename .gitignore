@@ -74,4 +74,9 @@ Thumbs.db
 binary.bin
 mo53
 
+# make generated file
+binary.bin
+data_list.o
+data_table.o
+mo53
 texte.txt
