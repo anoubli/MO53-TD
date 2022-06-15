@@ -202,7 +202,7 @@ public:
      * @brief iterates through the chained list "values_list"
      * 
      */
-    struct data_list_iterator {
+    struct values_list_iterator {
 
         private:
             /**
@@ -216,7 +216,7 @@ public:
              * @brief Construct a new value list iterator
              * 
              */
-            data_list_iterator(list_element *element);
+            values_list_iterator(list_element *element);
 
             /**
              * @brief overload of the operator *
@@ -235,34 +235,34 @@ public:
              * set the current elemnt with the next element
              * 
              */
-            data_list_iterator& operator++();
+            values_list_iterator& operator++();
 
             /**
              * @brief overload of the operator ++
              * set the current elemnt with the next element
              * 
              */
-            data_list_iterator& operator++(int);
+            values_list_iterator& operator++(int);
 
             /**
              * @brief overload of the operator !=
              * compare the current element of two iterator
              * 
              */
-            friend bool operator!=(const data_list_iterator& itr1,const data_list_iterator& itr2){return (itr1.element != itr2.element);};
+            friend bool operator!=(const values_list_iterator& itr1,const values_list_iterator& itr2){return (itr1.element != itr2.element);};
     };
 
     /**
      * @brief return an iterator pointing on the first element
      * 
      */
-    data_list_iterator begin();
+    values_list_iterator begin();
 
     /**
      * @brief return an iterator pointing on the last element
      * 
      */
-    data_list_iterator end();
+    values_list_iterator end();
 
     /**
      * @brief overload of the operator []
@@ -270,7 +270,7 @@ public:
      * 
      */
     list_element &operator[](int i){
-        data_list_iterator it = begin();
+        values_list_iterator it = begin();
         int count = 0;
         while(count < i && it != end()){
             it++;
