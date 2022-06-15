@@ -192,7 +192,7 @@ data_list data_list::average() {
 data_list data_list::table_sum() {
     data_list result;
     double current_sum = 0.0;
-    for(values_list::data_list_iterator it = _values.begin(); it != _values.end(); ++it ){
+    for(values_list::values_list_iterator it = _values.begin(); it != _values.end(); ++it ){
         current_sum += it.getElement()->get_value();
     }
     result._values.push_back(current_sum);
@@ -205,27 +205,27 @@ data_list data_list::table_count() {
     return result;
 }
 
-values_list::data_list_iterator values_list::begin() { 
-    return data_list_iterator(this->_head); 
+values_list::values_list_iterator values_list::begin() { 
+    return values_list_iterator(this->_head); 
 }
 
-values_list::data_list_iterator values_list::end() {
-    return data_list_iterator(this->_tail->get_next()); 
+values_list::values_list_iterator values_list::end() {
+    return values_list_iterator(this->_tail->get_next()); 
 }
 
-values_list::data_list_iterator::data_list_iterator(list_element *element) {
+values_list::values_list_iterator::values_list_iterator(list_element *element) {
     this->element = element;
 }
 
-values_list::data_list_iterator& values_list::data_list_iterator::operator++() {
+values_list::values_list_iterator& values_list::values_list_iterator::operator++() {
     if(this->element != nullptr){
         this->element = this->element->get_next();
     }
     return *this;
 }
 
-values_list::data_list_iterator& values_list::data_list_iterator::operator++(int value) {
-    data_list_iterator it = *this;
+values_list::values_list_iterator& values_list::values_list_iterator::operator++(int value) {
+    values_list_iterator it = *this;
     ++(*this);
     return it;
 }
