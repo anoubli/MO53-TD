@@ -197,23 +197,78 @@ public:
      */
     void sort_list(bool ascending);
 
+    /**
+     * @struct data_list_iterator
+     * @brief iterates through the chained list "values_list"
+     * 
+     */
     struct data_list_iterator {
 
         private:
+            /**
+             * @brief current element
+             * 
+             */
             list_element *element;
 
         public:
-            list_element& operator*() const{return *element;};
+            /**
+             * @brief Construct a new value list iterator
+             * 
+             */
             data_list_iterator(list_element *element);
+
+            /**
+             * @brief overload of the operator *
+             * 
+             */
+            list_element& operator*() const{return *element;}; 
+
+            /**
+             * @brief getter of the current element
+             * 
+             */
             list_element* getElement(){return this->element;};
+
+            /**
+             * @brief overload of the operator ++
+             * set the current elemnt with the next element
+             * 
+             */
             data_list_iterator& operator++();
+
+            /**
+             * @brief overload of the operator ++
+             * set the current elemnt with the next element
+             * 
+             */
             data_list_iterator& operator++(int);
+
+            /**
+             * @brief overload of the operator !=
+             * compare the current element of two iterator
+             * 
+             */
             friend bool operator!=(const data_list_iterator& itr1,const data_list_iterator& itr2){return (itr1.element != itr2.element);};
     };
 
+    /**
+     * @brief return an iterator pointing on the first element
+     * 
+     */
     data_list_iterator begin();
+
+    /**
+     * @brief return an iterator pointing on the last element
+     * 
+     */
     data_list_iterator end();
 
+    /**
+     * @brief overload of the operator []
+     * return the element of the position i
+     * 
+     */
     list_element &operator[](int i){
         data_list_iterator it = begin();
         int count = 0;
