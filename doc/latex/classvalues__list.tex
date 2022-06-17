@@ -1,0 +1,224 @@
+\hypertarget{classvalues__list}{}\doxysection{values\+\_\+list Class Reference}
+\label{classvalues__list}\index{values\_list@{values\_list}}
+
+
+Provide all services to manage a chained list of \mbox{\hyperlink{classlist__element}{list\+\_\+element}}.  
+
+
+
+
+{\ttfamily \#include $<$data\+\_\+list.\+h$>$}
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structvalues__list_1_1values__list__iterator}{values\+\_\+list\+\_\+iterator}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvalues__list_a7e2d703382a313b87e8027760b3408e4}{values\+\_\+list}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new values list object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classvalues__list_a93799b0a2bbf2ae2174a8f9c5a4df28d}{values\+\_\+list}} (const \mbox{\hyperlink{classvalues__list}{values\+\_\+list}} \&other)
+\begin{DoxyCompactList}\small\item\em Copy construct of values list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classvalues__list_a2b4ab65cd349bd76c76920ea8b8fb561}{$\sim$values\+\_\+list}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the values list object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classvalues__list}{values\+\_\+list}} \& \mbox{\hyperlink{classvalues__list_a013faeec588f047a7af9210ad74e3ca3}{operator=}} (const \mbox{\hyperlink{classvalues__list}{values\+\_\+list}} \&other)
+\begin{DoxyCompactList}\small\item\em Overload assignment operator \+: the current list will replace its elements by new elements with same values as the list passed in parameter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvalues__list_ac20473b79560a409e6f0eaf6381eecab}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Remove all elements from the list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvalues__list_a4cc218615b094b93748be4d72fdf9b83}{push\+\_\+back}} (double v)
+\begin{DoxyCompactList}\small\item\em Add new element at the end of the list with the value passed in parameter. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvalues__list_a1c12e951c1c8816ad229bc0d70341ba1}{pop\+\_\+element}} ()
+\begin{DoxyCompactList}\small\item\em Remove the head of the list. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classvalues__list_abc0f6e80e7262ea7e694c2c893474d3b}{size}} () const
+\begin{DoxyCompactList}\small\item\em Get current list size. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classvalues__list_a4a82d0e67970eca0f6bee15ffc34c7f7}{get\+\_\+value}} (size\+\_\+t position) const
+\begin{DoxyCompactList}\small\item\em Get the double value at position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvalues__list_a135ac5571bbcb0a7bc9cc16e2cc2d1f2}{sort\+\_\+list}} (bool ascending)
+\begin{DoxyCompactList}\small\item\em Sort the list depending on the parameter value. If parameter is {\ttfamily true} \+: ascending If parameter is {\ttfamily false} \+: descending. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structvalues__list_1_1values__list__iterator}{values\+\_\+list\+\_\+iterator}} \mbox{\hyperlink{classvalues__list_a35ffb4700d8d8422aac1b53ae6ac0fe7}{begin}} ()
+\begin{DoxyCompactList}\small\item\em return an iterator pointing on the first element \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structvalues__list_1_1values__list__iterator}{values\+\_\+list\+\_\+iterator}} \mbox{\hyperlink{classvalues__list_aa6339d7c27a1ff0bb998de8968dd0b0a}{end}} ()
+\begin{DoxyCompactList}\small\item\em return an iterator pointing on the last element \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlist__element}{list\+\_\+element}} \& \mbox{\hyperlink{classvalues__list_a1a0df9a0f9e5dff314f2bc20821f3e05}{operator\mbox{[}$\,$\mbox{]}}} (int i)
+\begin{DoxyCompactList}\small\item\em overload of the operator \mbox{[}\mbox{]} return the element of the position i \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provide all services to manage a chained list of \mbox{\hyperlink{classlist__element}{list\+\_\+element}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvalues__list_a7e2d703382a313b87e8027760b3408e4}\label{classvalues__list_a7e2d703382a313b87e8027760b3408e4}} 
+\index{values\_list@{values\_list}!values\_list@{values\_list}}
+\index{values\_list@{values\_list}!values\_list@{values\_list}}
+\doxysubsubsection{\texorpdfstring{values\_list()}{values\_list()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily values\+\_\+list\+::values\+\_\+list (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new values list object. 
+
+\mbox{\Hypertarget{classvalues__list_a93799b0a2bbf2ae2174a8f9c5a4df28d}\label{classvalues__list_a93799b0a2bbf2ae2174a8f9c5a4df28d}} 
+\index{values\_list@{values\_list}!values\_list@{values\_list}}
+\index{values\_list@{values\_list}!values\_list@{values\_list}}
+\doxysubsubsection{\texorpdfstring{values\_list()}{values\_list()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily values\+\_\+list\+::values\+\_\+list (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvalues__list}{values\+\_\+list}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Copy construct of values list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & the list that will be copied \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvalues__list_a2b4ab65cd349bd76c76920ea8b8fb561}\label{classvalues__list_a2b4ab65cd349bd76c76920ea8b8fb561}} 
+\index{values\_list@{values\_list}!````~values\_list@{$\sim$values\_list}}
+\index{````~values\_list@{$\sim$values\_list}!values\_list@{values\_list}}
+\doxysubsubsection{\texorpdfstring{$\sim$values\_list()}{~values\_list()}}
+{\footnotesize\ttfamily values\+\_\+list\+::$\sim$values\+\_\+list (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroy the values list object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvalues__list_a35ffb4700d8d8422aac1b53ae6ac0fe7}\label{classvalues__list_a35ffb4700d8d8422aac1b53ae6ac0fe7}} 
+\index{values\_list@{values\_list}!begin@{begin}}
+\index{begin@{begin}!values\_list@{values\_list}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvalues__list_1_1values__list__iterator}{values\+\_\+list\+::values\+\_\+list\+\_\+iterator}} values\+\_\+list\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+return an iterator pointing on the first element 
+
+\mbox{\Hypertarget{classvalues__list_ac20473b79560a409e6f0eaf6381eecab}\label{classvalues__list_ac20473b79560a409e6f0eaf6381eecab}} 
+\index{values\_list@{values\_list}!clear@{clear}}
+\index{clear@{clear}!values\_list@{values\_list}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void values\+\_\+list\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Remove all elements from the list. 
+
+\mbox{\Hypertarget{classvalues__list_aa6339d7c27a1ff0bb998de8968dd0b0a}\label{classvalues__list_aa6339d7c27a1ff0bb998de8968dd0b0a}} 
+\index{values\_list@{values\_list}!end@{end}}
+\index{end@{end}!values\_list@{values\_list}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structvalues__list_1_1values__list__iterator}{values\+\_\+list\+::values\+\_\+list\+\_\+iterator}} values\+\_\+list\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+return an iterator pointing on the last element 
+
+\mbox{\Hypertarget{classvalues__list_a4a82d0e67970eca0f6bee15ffc34c7f7}\label{classvalues__list_a4a82d0e67970eca0f6bee15ffc34c7f7}} 
+\index{values\_list@{values\_list}!get\_value@{get\_value}}
+\index{get\_value@{get\_value}!values\_list@{values\_list}}
+\doxysubsubsection{\texorpdfstring{get\_value()}{get\_value()}}
+{\footnotesize\ttfamily double values\+\_\+list\+::get\+\_\+value (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{position }\end{DoxyParamCaption}) const}
+
+
+
+Get the double value at position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvalues__list_a013faeec588f047a7af9210ad74e3ca3}\label{classvalues__list_a013faeec588f047a7af9210ad74e3ca3}} 
+\index{values\_list@{values\_list}!operator=@{operator=}}
+\index{operator=@{operator=}!values\_list@{values\_list}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvalues__list}{values\+\_\+list}} \& values\+\_\+list\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvalues__list}{values\+\_\+list}} \&}]{other }\end{DoxyParamCaption})}
+
+
+
+Overload assignment operator \+: the current list will replace its elements by new elements with same values as the list passed in parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & the reference list \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classvalues__list}{values\+\_\+list}}\& the current list 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvalues__list_a1a0df9a0f9e5dff314f2bc20821f3e05}\label{classvalues__list_a1a0df9a0f9e5dff314f2bc20821f3e05}} 
+\index{values\_list@{values\_list}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!values\_list@{values\_list}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classlist__element}{list\+\_\+element}} \& values\+\_\+list\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+overload of the operator \mbox{[}\mbox{]} return the element of the position i 
+
+\mbox{\Hypertarget{classvalues__list_a1c12e951c1c8816ad229bc0d70341ba1}\label{classvalues__list_a1c12e951c1c8816ad229bc0d70341ba1}} 
+\index{values\_list@{values\_list}!pop\_element@{pop\_element}}
+\index{pop\_element@{pop\_element}!values\_list@{values\_list}}
+\doxysubsubsection{\texorpdfstring{pop\_element()}{pop\_element()}}
+{\footnotesize\ttfamily void values\+\_\+list\+::pop\+\_\+element (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Remove the head of the list. 
+
+\mbox{\Hypertarget{classvalues__list_a4cc218615b094b93748be4d72fdf9b83}\label{classvalues__list_a4cc218615b094b93748be4d72fdf9b83}} 
+\index{values\_list@{values\_list}!push\_back@{push\_back}}
+\index{push\_back@{push\_back}!values\_list@{values\_list}}
+\doxysubsubsection{\texorpdfstring{push\_back()}{push\_back()}}
+{\footnotesize\ttfamily void values\+\_\+list\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{double}]{v }\end{DoxyParamCaption})}
+
+
+
+Add new element at the end of the list with the value passed in parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & the value of the new element \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvalues__list_abc0f6e80e7262ea7e694c2c893474d3b}\label{classvalues__list_abc0f6e80e7262ea7e694c2c893474d3b}} 
+\index{values\_list@{values\_list}!size@{size}}
+\index{size@{size}!values\_list@{values\_list}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily size\+\_\+t values\+\_\+list\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get current list size. 
+
+\begin{DoxyReturn}{Returns}
+size\+\_\+t 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvalues__list_a135ac5571bbcb0a7bc9cc16e2cc2d1f2}\label{classvalues__list_a135ac5571bbcb0a7bc9cc16e2cc2d1f2}} 
+\index{values\_list@{values\_list}!sort\_list@{sort\_list}}
+\index{sort\_list@{sort\_list}!values\_list@{values\_list}}
+\doxysubsubsection{\texorpdfstring{sort\_list()}{sort\_list()}}
+{\footnotesize\ttfamily void values\+\_\+list\+::sort\+\_\+list (\begin{DoxyParamCaption}\item[{bool}]{ascending }\end{DoxyParamCaption})}
+
+
+
+Sort the list depending on the parameter value. If parameter is {\ttfamily true} \+: ascending If parameter is {\ttfamily false} \+: descending. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ascending} & the sort direction \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{data__list_8h}{data\+\_\+list.\+h}}\item 
+\mbox{\hyperlink{data__list_8cpp}{data\+\_\+list.\+cpp}}\end{DoxyCompactItemize}

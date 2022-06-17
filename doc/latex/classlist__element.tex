@@ -1,0 +1,163 @@
+\hypertarget{classlist__element}{}\doxysection{list\+\_\+element Class Reference}
+\label{classlist__element}\index{list\_element@{list\_element}}
+
+
+Element of a chained list that contains a double value and is linked with previous and next values of the list \+:  
+
+
+
+
+{\ttfamily \#include $<$data\+\_\+list.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlist__element_ad09f4131f56e61d19841c15da092e771}{list\+\_\+element}} (double v=0.\+0, \mbox{\hyperlink{classlist__element}{list\+\_\+element}} $\ast$p=nullptr, \mbox{\hyperlink{classlist__element}{list\+\_\+element}} $\ast$n=nullptr)
+\begin{DoxyCompactList}\small\item\em Construct a new list element. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlist__element_a3cf691d87a11e0e82a92bc7018fffe10}{$\sim$list\+\_\+element}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the list element. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlist__element}{list\+\_\+element}} $\ast$ \mbox{\hyperlink{classlist__element_a178f4cca98cf8597dc48b64545d4b186}{get\+\_\+next}} ()
+\begin{DoxyCompactList}\small\item\em Get the next list element. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlist__element_a18a41b4b47b8e093e82e016271541dc3}{set\+\_\+next}} (\mbox{\hyperlink{classlist__element}{list\+\_\+element}} $\ast$n)
+\begin{DoxyCompactList}\small\item\em Set the next list element. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classlist__element}{list\+\_\+element}} $\ast$ \mbox{\hyperlink{classlist__element_ae282880d49beae7049b60207d6caf660}{get\+\_\+prev}} ()
+\begin{DoxyCompactList}\small\item\em Get the previous list element. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlist__element_a070a6dc6dc9d8ea7847f39f37278aa0a}{set\+\_\+prev}} (\mbox{\hyperlink{classlist__element}{list\+\_\+element}} $\ast$n)
+\begin{DoxyCompactList}\small\item\em Set the previous list element. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classlist__element_ace3c6890cdbbae0054ccf896a4104e34}{get\+\_\+value}} () const
+\begin{DoxyCompactList}\small\item\em Get the element value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classlist__element_af5da8a5c17781d07ff9411c4878d7b76}{set\+\_\+value}} (double v)
+\begin{DoxyCompactList}\small\item\em Set the element value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Element of a chained list that contains a double value and is linked with previous and next values of the list \+: 
+
+
+\begin{DoxyItemize}
+\item if previous element is null \+: the element is the list head
+\item if next element is null \+: the element is the list tail 
+\end{DoxyItemize}
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classlist__element_ad09f4131f56e61d19841c15da092e771}\label{classlist__element_ad09f4131f56e61d19841c15da092e771}} 
+\index{list\_element@{list\_element}!list\_element@{list\_element}}
+\index{list\_element@{list\_element}!list\_element@{list\_element}}
+\doxysubsubsection{\texorpdfstring{list\_element()}{list\_element()}}
+{\footnotesize\ttfamily list\+\_\+element\+::list\+\_\+element (\begin{DoxyParamCaption}\item[{double}]{v = {\ttfamily 0.0},  }\item[{\mbox{\hyperlink{classlist__element}{list\+\_\+element}} $\ast$}]{p = {\ttfamily nullptr},  }\item[{\mbox{\hyperlink{classlist__element}{list\+\_\+element}} $\ast$}]{n = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Construct a new list element. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & the double value \\
+\hline
+{\em p} & pointer to the previous element \\
+\hline
+{\em n} & pointer to the next element \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlist__element_a3cf691d87a11e0e82a92bc7018fffe10}\label{classlist__element_a3cf691d87a11e0e82a92bc7018fffe10}} 
+\index{list\_element@{list\_element}!````~list\_element@{$\sim$list\_element}}
+\index{````~list\_element@{$\sim$list\_element}!list\_element@{list\_element}}
+\doxysubsubsection{\texorpdfstring{$\sim$list\_element()}{~list\_element()}}
+{\footnotesize\ttfamily list\+\_\+element\+::$\sim$list\+\_\+element (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destroy the list element. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classlist__element_a178f4cca98cf8597dc48b64545d4b186}\label{classlist__element_a178f4cca98cf8597dc48b64545d4b186}} 
+\index{list\_element@{list\_element}!get\_next@{get\_next}}
+\index{get\_next@{get\_next}!list\_element@{list\_element}}
+\doxysubsubsection{\texorpdfstring{get\_next()}{get\_next()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classlist__element}{list\+\_\+element}} $\ast$ list\+\_\+element\+::get\+\_\+next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the next list element. 
+
+\begin{DoxyReturn}{Returns}
+list\+\_\+element$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlist__element_ae282880d49beae7049b60207d6caf660}\label{classlist__element_ae282880d49beae7049b60207d6caf660}} 
+\index{list\_element@{list\_element}!get\_prev@{get\_prev}}
+\index{get\_prev@{get\_prev}!list\_element@{list\_element}}
+\doxysubsubsection{\texorpdfstring{get\_prev()}{get\_prev()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classlist__element}{list\+\_\+element}} $\ast$ list\+\_\+element\+::get\+\_\+prev (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the previous list element. 
+
+\begin{DoxyReturn}{Returns}
+list\+\_\+element$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlist__element_ace3c6890cdbbae0054ccf896a4104e34}\label{classlist__element_ace3c6890cdbbae0054ccf896a4104e34}} 
+\index{list\_element@{list\_element}!get\_value@{get\_value}}
+\index{get\_value@{get\_value}!list\_element@{list\_element}}
+\doxysubsubsection{\texorpdfstring{get\_value()}{get\_value()}}
+{\footnotesize\ttfamily double list\+\_\+element\+::get\+\_\+value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get the element value. 
+
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlist__element_a18a41b4b47b8e093e82e016271541dc3}\label{classlist__element_a18a41b4b47b8e093e82e016271541dc3}} 
+\index{list\_element@{list\_element}!set\_next@{set\_next}}
+\index{set\_next@{set\_next}!list\_element@{list\_element}}
+\doxysubsubsection{\texorpdfstring{set\_next()}{set\_next()}}
+{\footnotesize\ttfamily void list\+\_\+element\+::set\+\_\+next (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlist__element}{list\+\_\+element}} $\ast$}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the next list element. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & the new element of the list that will be insert after the current element \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlist__element_a070a6dc6dc9d8ea7847f39f37278aa0a}\label{classlist__element_a070a6dc6dc9d8ea7847f39f37278aa0a}} 
+\index{list\_element@{list\_element}!set\_prev@{set\_prev}}
+\index{set\_prev@{set\_prev}!list\_element@{list\_element}}
+\doxysubsubsection{\texorpdfstring{set\_prev()}{set\_prev()}}
+{\footnotesize\ttfamily void list\+\_\+element\+::set\+\_\+prev (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlist__element}{list\+\_\+element}} $\ast$}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the previous list element. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & the new element of the list that will be insert before the current element \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classlist__element_af5da8a5c17781d07ff9411c4878d7b76}\label{classlist__element_af5da8a5c17781d07ff9411c4878d7b76}} 
+\index{list\_element@{list\_element}!set\_value@{set\_value}}
+\index{set\_value@{set\_value}!list\_element@{list\_element}}
+\doxysubsubsection{\texorpdfstring{set\_value()}{set\_value()}}
+{\footnotesize\ttfamily void list\+\_\+element\+::set\+\_\+value (\begin{DoxyParamCaption}\item[{double}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set the element value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & the new double value \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{data__list_8h}{data\+\_\+list.\+h}}\end{DoxyCompactItemize}

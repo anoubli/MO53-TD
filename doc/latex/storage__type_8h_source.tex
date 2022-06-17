@@ -1,0 +1,35 @@
+\hypertarget{storage__type_8h_source}{}\doxysection{storage\+\_\+type.\+h}
+\mbox{\hyperlink{storage__type_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{10 \textcolor{comment}{//}}
+\DoxyCodeLine{11 \textcolor{comment}{// Define guards}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef STORAGE\_TYPE\_H}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define STORAGE\_TYPE\_H}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{19 \textcolor{keyword}{class }\mbox{\hyperlink{classstorage__type}{storage\_type}} \{ \textcolor{comment}{// pure virtual}}
+\DoxyCodeLine{20     \textcolor{comment}{/* Declarations */}}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 public :}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{28     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classstorage__type_ab3e186cf6c860009037d4072d63c613e}{push\_back}}();}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{34     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classstorage__type_a0ebe8f5b28fb48c7dd6f52751aff1420}{pop\_element}}();}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{40     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classstorage__type_a98694bc9355a25bbbcd9db5c3dd8bb7e}{iterator}}();}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42     \textcolor{comment}{//TODO histoire d'opérateur poto}}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 \};}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{50 \textcolor{keyword}{class }\mbox{\hyperlink{classlist__storage}{list\_storage}} : \textcolor{keyword}{public} \mbox{\hyperlink{classstorage__type}{storage\_type}}\{}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52 \};}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{58 \textcolor{keyword}{class }\mbox{\hyperlink{classvector__storage}{vector\_storage}} : \textcolor{keyword}{public} \mbox{\hyperlink{classstorage__type}{storage\_type}}\{}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60 \};}
+\DoxyCodeLine{61 }
+\DoxyCodeLine{62 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// STORAGE\_TYPE\_H}}
+
+\end{DoxyCode}

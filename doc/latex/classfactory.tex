@@ -1,0 +1,113 @@
+\hypertarget{classfactory}{}\doxysection{factory Class Reference}
+\label{classfactory}\index{factory@{factory}}
+
+
+Factory class to whom we delegate the object creation.  
+
+
+
+
+{\ttfamily \#include $<$factory.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classfactory_aebdaa4768b64b19e795bfd094af0cea8}{factory}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new factory object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classfactory_af2896f3752cc09a15687b60cb12a4698}{$\sim$factory}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the factory object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstorage__type}{storage\+\_\+type}} $\ast$ \mbox{\hyperlink{classfactory_a2cc2fd6ad8b2d23f0195d58040a7a808}{storage\+\_\+type\+\_\+factory}} ()
+\begin{DoxyCompactList}\small\item\em Create a storage object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classloader}{loader}} $\ast$ \mbox{\hyperlink{classfactory_a6f14924d92da7f8e029ae6b652126ba5}{loader\+\_\+factory}} ()
+\begin{DoxyCompactList}\small\item\em Create a loader object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classwriter}{writer}} $\ast$ \mbox{\hyperlink{classfactory_ae171b26dbf16e76f07749a2620a716de}{writer\+\_\+factory}} ()
+\begin{DoxyCompactList}\small\item\em Create a writer object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classcalculation}{calculation}} $\ast$ \mbox{\hyperlink{classfactory_a83f5947b97410752495bb836546858fa}{calculation\+\_\+factory}} ()
+\begin{DoxyCompactList}\small\item\em Create a calculation object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Factory class to whom we delegate the object creation. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classfactory_aebdaa4768b64b19e795bfd094af0cea8}\label{classfactory_aebdaa4768b64b19e795bfd094af0cea8}} 
+\index{factory@{factory}!factory@{factory}}
+\index{factory@{factory}!factory@{factory}}
+\doxysubsubsection{\texorpdfstring{factory()}{factory()}}
+{\footnotesize\ttfamily factory\+::factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new factory object. 
+
+\mbox{\Hypertarget{classfactory_af2896f3752cc09a15687b60cb12a4698}\label{classfactory_af2896f3752cc09a15687b60cb12a4698}} 
+\index{factory@{factory}!````~factory@{$\sim$factory}}
+\index{````~factory@{$\sim$factory}!factory@{factory}}
+\doxysubsubsection{\texorpdfstring{$\sim$factory()}{~factory()}}
+{\footnotesize\ttfamily factory\+::$\sim$factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the factory object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classfactory_a83f5947b97410752495bb836546858fa}\label{classfactory_a83f5947b97410752495bb836546858fa}} 
+\index{factory@{factory}!calculation\_factory@{calculation\_factory}}
+\index{calculation\_factory@{calculation\_factory}!factory@{factory}}
+\doxysubsubsection{\texorpdfstring{calculation\_factory()}{calculation\_factory()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcalculation}{calculation}} $\ast$ factory\+::calculation\+\_\+factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Create a calculation object. 
+
+\begin{DoxyReturn}{Returns}
+calculation$\ast$ ptr to the created calculation object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfactory_a6f14924d92da7f8e029ae6b652126ba5}\label{classfactory_a6f14924d92da7f8e029ae6b652126ba5}} 
+\index{factory@{factory}!loader\_factory@{loader\_factory}}
+\index{loader\_factory@{loader\_factory}!factory@{factory}}
+\doxysubsubsection{\texorpdfstring{loader\_factory()}{loader\_factory()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classloader}{loader}} $\ast$ factory\+::loader\+\_\+factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Create a loader object. 
+
+\begin{DoxyReturn}{Returns}
+loader$\ast$ ptr to the created loader object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfactory_a2cc2fd6ad8b2d23f0195d58040a7a808}\label{classfactory_a2cc2fd6ad8b2d23f0195d58040a7a808}} 
+\index{factory@{factory}!storage\_type\_factory@{storage\_type\_factory}}
+\index{storage\_type\_factory@{storage\_type\_factory}!factory@{factory}}
+\doxysubsubsection{\texorpdfstring{storage\_type\_factory()}{storage\_type\_factory()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classstorage__type}{storage\+\_\+type}} $\ast$ factory\+::storage\+\_\+type\+\_\+factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Create a storage object. 
+
+\begin{DoxyReturn}{Returns}
+storage\+\_\+type$\ast$ ptr to the created storage object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfactory_ae171b26dbf16e76f07749a2620a716de}\label{classfactory_ae171b26dbf16e76f07749a2620a716de}} 
+\index{factory@{factory}!writer\_factory@{writer\_factory}}
+\index{writer\_factory@{writer\_factory}!factory@{factory}}
+\doxysubsubsection{\texorpdfstring{writer\_factory()}{writer\_factory()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classwriter}{writer}} $\ast$ factory\+::writer\+\_\+factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Create a writer object. 
+
+\begin{DoxyReturn}{Returns}
+writer$\ast$ ptr to the created writer object 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{factory_8h}{factory.\+h}}\item 
+\mbox{\hyperlink{factory_8cpp}{factory.\+cpp}}\end{DoxyCompactItemize}

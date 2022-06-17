@@ -1,0 +1,29 @@
+\hypertarget{process_8h_source}{}\doxysection{process.\+h}
+\mbox{\hyperlink{process_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{10 \textcolor{comment}{//}}
+\DoxyCodeLine{11 \textcolor{comment}{// Define guards}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef PROCESS\_H}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define PROCESS\_H}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{storage__type_8h}{storage\_type.h}}"{}}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{loader_8h}{loader.h}}"{}}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{calculation_8h}{calculation.h}}"{}}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{writer_8h}{writer.h}}"{}}}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{24 \textcolor{keyword}{class }\mbox{\hyperlink{classprocess}{process}} \{}
+\DoxyCodeLine{25     \mbox{\hyperlink{classstorage__type}{storage\_type}} *\_storage;}
+\DoxyCodeLine{26     \mbox{\hyperlink{classloader}{loader}} *\_loader;}
+\DoxyCodeLine{27     \mbox{\hyperlink{classcalculation}{calculation}} *\_calc;}
+\DoxyCodeLine{28     \mbox{\hyperlink{classwriter}{writer}} *\_writer;}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{keyword}{public}:}
+\DoxyCodeLine{39     \mbox{\hyperlink{classprocess_a86eb2d6e61399e58e85d4e42974d3b6b}{process}}(\mbox{\hyperlink{classstorage__type}{storage\_type}} *stor, \mbox{\hyperlink{classloader}{loader}} *load, \mbox{\hyperlink{classcalculation}{calculation}} *calc, \mbox{\hyperlink{classwriter}{writer}} *write);}
+\DoxyCodeLine{40     }
+\DoxyCodeLine{45     \textcolor{keywordtype}{void} \mbox{\hyperlink{classprocess_a86db3fe5f9bd3f55d39ca6957bd25281}{execute}}();}
+\DoxyCodeLine{46 \};}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// PROCESS\_H}}
+
+\end{DoxyCode}

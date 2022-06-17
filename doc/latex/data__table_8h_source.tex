@@ -1,0 +1,47 @@
+\hypertarget{data__table_8h_source}{}\doxysection{data\+\_\+table.\+h}
+\mbox{\hyperlink{data__table_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{10 \textcolor{comment}{//}}
+\DoxyCodeLine{11 \textcolor{comment}{// Define guards}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#ifndef DATA\_TABLE\_H}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define DATA\_TABLE\_H}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{22 \textcolor{keyword}{class }\mbox{\hyperlink{classdata__table}{data\_table}} \{}
+\DoxyCodeLine{23     std::vector<double> \_table;}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{keyword}{public}:}
+\DoxyCodeLine{30     \mbox{\hyperlink{classdata__table_aac2e5eb1ae7ae42307fbc5e72980f004}{data\_table}}();}
+\DoxyCodeLine{31     }
+\DoxyCodeLine{36     \mbox{\hyperlink{classdata__table_af3abcb45a83807fb9a80d605a77b6300}{\string~data\_table}}() \{\}}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38     \textcolor{comment}{// Input methods}}
+\DoxyCodeLine{44 \textcolor{comment}{}    \textcolor{keywordtype}{void} \mbox{\hyperlink{classdata__table_a91f2609ad2d4fb79b88bf519ff3525e4}{from\_text}}(\textcolor{keyword}{const} std::string \&source);}
+\DoxyCodeLine{45     }
+\DoxyCodeLine{51     \textcolor{keywordtype}{void} \mbox{\hyperlink{classdata__table_a71aa3993295fd805d67f200afc371a42}{from\_binary}}(\textcolor{keyword}{const} std::string \&source);}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53     \textcolor{comment}{// Output methods}}
+\DoxyCodeLine{59 \textcolor{comment}{}    \textcolor{keywordtype}{void} \mbox{\hyperlink{classdata__table_aa86c6c9e43bdaabae2eeb2950384a9b4}{to\_text}}(\textcolor{keyword}{const} std::string \&destination);}
+\DoxyCodeLine{60     }
+\DoxyCodeLine{66     \textcolor{keywordtype}{void} \mbox{\hyperlink{classdata__table_a622b65ddb4db3bd7d99ca8e859811dbd}{to\_binary}}(\textcolor{keyword}{const} std::string \&destination);}
+\DoxyCodeLine{67     }
+\DoxyCodeLine{72     \textcolor{keywordtype}{void} \mbox{\hyperlink{classdata__table_af843ab7244595aa403150c0f0e70d1a9}{print\_data}}()\textcolor{keyword}{const};}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74     \textcolor{comment}{// Computation (return new instances of data\_table)}}
+\DoxyCodeLine{83 \textcolor{comment}{}    \mbox{\hyperlink{classdata__table}{data\_table}} \mbox{\hyperlink{classdata__table_a0e45c77b938188b636ea9b1c70e22074}{moving\_average}}(\textcolor{keywordtype}{size\_t} window\_width);}
+\DoxyCodeLine{84     }
+\DoxyCodeLine{93     \mbox{\hyperlink{classdata__table}{data\_table}} \mbox{\hyperlink{classdata__table_a0532bb68a617c03e9a173eb229f5030b}{sort\_table}}(\textcolor{keywordtype}{bool} ascending=\textcolor{keyword}{true});}
+\DoxyCodeLine{94     }
+\DoxyCodeLine{100     \mbox{\hyperlink{classdata__table}{data\_table}} \mbox{\hyperlink{classdata__table_a434f183e42e068378e5965281127525c}{average}}();}
+\DoxyCodeLine{101     }
+\DoxyCodeLine{107     \mbox{\hyperlink{classdata__table}{data\_table}} \mbox{\hyperlink{classdata__table_a13918efa3d071f9a0db1097a6e71349a}{table\_sum}}();}
+\DoxyCodeLine{108     }
+\DoxyCodeLine{114     \mbox{\hyperlink{classdata__table}{data\_table}} \mbox{\hyperlink{classdata__table_ae21d42f854c08e1140608dce54284ad4}{table\_count}}();}
+\DoxyCodeLine{115 \};}
+\DoxyCodeLine{116 }
+\DoxyCodeLine{117 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// DATA\_TABLE\_H}}
+
+\end{DoxyCode}
