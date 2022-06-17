@@ -1,6 +1,6 @@
 /**
  *
- * @file loader.h
+ * @file process.h
  * @author antoine richard
  * @date 2022-06-10
  * @brief Contains process class
