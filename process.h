@@ -1,3 +1,14 @@
+/**
+ *
+ * @file process.h
+ * @author antoine richard
+ * @date 2022-06-10
+ * @brief Contains process class
+ * 
+ */
+
+//
+// Define guards
 #ifndef PROCESS_H
 #define PROCESS_H
 
@@ -6,14 +17,31 @@
 #include "calculation.h"
 #include "writer.h"
 
-class process { // raw pointers may be improved
+/**
+ * @brief Manage the data flux process
+ * 
+ */
+class process {
     storage_type *_storage;
     loader *_loader;
     calculation *_calc;
     writer *_writer;
 
 public:
+    /**
+     * @brief Construct a new process object
+     * 
+     * @param stor ptr to a storage_type object
+     * @param load ptr to a loader object
+     * @param calc ptr to a calculation object
+     * @param write ptr to a writer object
+     */
     process(storage_type *stor, loader *load, calculation *calc, writer *write);
+    
+    /**
+     * @brief Makes the calls to the different stages of the data flux
+     * 
+     */
     void execute();
 };
 
