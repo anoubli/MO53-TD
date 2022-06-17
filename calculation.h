@@ -6,12 +6,15 @@
 
 class calculation { // pure virtual
 
+public :
+
     virtual storage_type calculate();
 
 }; // average, rolling_average, etc. inherit from calculation
 
 class average : public calculation{
 
+public :
     /**
      * @brief Calculate the average of all data
      *
@@ -22,6 +25,7 @@ class average : public calculation{
 
 class moving_average{
 
+public :
     // Computation (return new instances of data_table)
     /**
      * @brief Calculate a series of averages of different subsets of the full data set. The size of these subsets
