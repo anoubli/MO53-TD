@@ -14,7 +14,7 @@ class process { // raw pointers may be improved
 
 public:
     process(storage_type *stor, loader *load, calculation *calc, writer *write): _storage(stor), _loader(load), _calc(calc), _writer(write) {};
-    void execute(string path_to_file);
+    void execute(std::string path_to_file);
 };
 
 #endif // PROCESS_H
