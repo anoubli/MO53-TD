@@ -1,3 +1,7 @@
+# Injection de dépendance
+Nous avons commencer à refactoriser le code en séparant les différentes classes nécessaires à la mise en place du polymorphisme et l'utilisation de process. Cependant, nous n'avons pas terminé cette partie, elle n'a donc pas été merge avec le master afin d'éviter tous désagrément ou surprise en ce qui concerne le fonctionnement actuel du code.
+
+
 # Refactoring avec git
 
 L'objectif de ce TD est d'utiliser git en équipe pour restructurer un programme mal conçu. Le programme d'exemple permet de lire des données de type `double`, de les stocker, d'effectuer des calculs dessus et d'écrire le résultat.
