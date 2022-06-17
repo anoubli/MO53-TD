@@ -104,55 +104,12 @@ list_storage::list_storage(const list_storage &other) {
     _values = other._values;
 }
 
-void list_storage::from_text(const std::string &source) {
-    _values.clear();
-    ifstream f{source};
-    if (f.is_open()) {
-        array<char, 100> buffer;
-        while (f.getline(&buffer[0], 100)) {
-            _values.push_back(stold(string{buffer.data()}));
-        }
-    } else {
-        throw ios_base::failure("File cannot be opened for reading.");
-    }
-}
 
-void list_storage::from_binary(const std::string &source) {
-    _values.clear();
-    ifstream f{source, std::ios::binary};
-    if (f.is_open()) {
-        double buffer;
-        while (f.read(reinterpret_cast<char *>(&buffer), sizeof(double))) {
-            _values.push_back(buffer);
-        }
-    } else  {
-        throw ios_base::failure("File cannot be opened for reading.");
-    }
-}
-
-void list_storage::to_text(const std::string &destination) {
-    ofstream f{destination};
-    if (f.is_open()) {
-        for (size_t i=0; i<_values.size(); ++i) {
-            f << _values.get_value(i) << endl;
-        }
-    }
-}
-
-void list_storage::to_binary(const std::string &destination) {
-    ofstream f{destination, std::ios::binary};
-    if (f.is_open()) {
-        for (size_t i=0; i<_values.size(); ++i) {
-            double val = _values.get_value(i);
-            f.write(reinterpret_cast<const char *>(&val), sizeof(double));
-        }
-    } else  {
-        throw ios_base::failure("File cannot be opened for writing.");
-    }
-}
 
 void list_storage::print_data() const {
     for (size_t i=0; i<_values.size(); ++i) {
-        cout << _values.get_value(i) << endl;
+        std::cout << _values.get_value(i) << std::endl;
     }
 }
+
+vector_storage::

@@ -11,6 +11,8 @@ class loader { // pure virtual
 class text_loader : public loader{
 
 public :
+    text_loader();
+    ~text_loader();
     // Input methods
     /**
      * @brief Replace current data by text file values

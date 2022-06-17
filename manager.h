@@ -17,16 +17,16 @@ public:
     manager();
 
     //create the right storage type object
-    storage_type make_storage();
+    storage_type make_storage(std::string param);
 
     //create the right loader type object
-    loader make_reader();
+    loader make_reader(std::string param);
 
     //create the right calculation type object
-    calculation make_calculation();
+    calculation make_calculation(std::string param);
 
     //create the right writer type object
-    writer make_writer();
+    writer make_writer(std::string param);
 
 };
 
